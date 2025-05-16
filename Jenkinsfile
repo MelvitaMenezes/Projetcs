@@ -5,7 +5,9 @@ pipeline{
         stage('Checkout') {
             steps {
                 script {
-                git  'https://github.com/MelvitaMenezes/Projetcs.git'
+                    git branch: 'main',
+                        credentialsId: 'MelvitaMenezes',
+                        url: 'https://github.com/MelvitaMenezes/Projetcs.git'
                 }
             }
         }
