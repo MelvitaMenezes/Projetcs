@@ -5,7 +5,7 @@ pipeline{
         stage('Checkout') {
             steps {
                 git 
-                https://github.com/MelvitaMenezes/Projetcs.git
+                'https://github.com/MelvitaMenezes/Projetcs.git'
             }
         }
         stage('build Docker Image') {
