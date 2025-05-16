@@ -23,7 +23,7 @@ pipeline{
                 script {
                     sh ''' docker stop static-website || true
                             docker rm static-website || true
-                            docker run -d --name static-website -p 8080:80 static-website '''
+                            docker run -d --name static-website -p 9000:80 static-website '''
                 }
             }
         }
