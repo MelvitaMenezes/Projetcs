@@ -4,8 +4,9 @@ pipeline{
     stages {
         stage('Checkout') {
             steps {
-                git 
-                'https://github.com/MelvitaMenezes/Projetcs.git'
+                script {
+                git  'https://github.com/MelvitaMenezes/Projetcs.git'
+                }
             }
         }
         stage('build Docker Image') {
